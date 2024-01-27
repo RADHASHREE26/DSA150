@@ -4,7 +4,7 @@ class Solution {
         
         int i = 0, j = i+1;
         int c = 0;
-        while(i < nums.length && j < nums.length)
+        while(j < nums.length)
         {
             if(nums[i] == nums[j]){
                 j++;
