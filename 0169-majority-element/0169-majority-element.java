@@ -22,3 +22,28 @@ class Solution {
         
     }
 }
+
+/*
+
+Optimal Solution
+
+class Solution {
+    public int majorityElement(int[] arr) {
+        int c=0,ele=0;
+
+		for(int i=0;i<arr.length;i++)
+		{
+			if(c==0)
+			ele=arr[i];
+			if(ele==arr[i])
+			c++;
+			else
+			c--;
+		}
+		
+		return ele;
+    }
+}
+
+
+*/
