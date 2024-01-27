@@ -7,7 +7,6 @@ class Solution {
         while(j < nums.length)
         {
             if(nums[i] == nums[j]){
-                j++;
                 c++;
             }
             else{
@@ -15,8 +14,8 @@ class Solution {
                 int temp = nums[i];
                 nums[i] = nums[j];
                 nums[j] = temp;
-                j++;
             }
+            j++;
         }
         
         return nums.length - c;
